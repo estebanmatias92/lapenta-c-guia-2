@@ -67,7 +67,8 @@ void ejercicio_11()
         printf("\nZ1 * Z2^(-1) = (%.2f + %.2fi) * ((1 / %.2f) + (1 / %.2fi))", a, bi, c, di);
         printf("\nZ1 * Z2^(-1) = ((%.2f / %.2f) + (%.2f / %.2f) + (%.2f / %.2f) + (%.2f / %.2f))i", a, c, a, di, bi, c, bi, di);
         float Z1_div = (a / c);
-        printf("\nZ1 * Z2^(-1) = (%.2f + (%.2f / %.2fi) + (%.2fi / %.2f) + (%.2fi / %.2fi)", Z1_div, a, di, bi, c, bi, di);
+        float Z2_div = (bi / di);
+        printf("\nZ1 * Z2^(-1) = (%.2f + (%.2f / %.2fi) + (%.2fi / %.2f) + %.2fi)", Z1_div, a, di, bi, c, Z2_div);
         break;
     default:
         printf("\nEl operador ingresado no es reconocido");
